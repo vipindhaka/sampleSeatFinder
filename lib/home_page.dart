@@ -77,7 +77,8 @@ class _MyHomePageState extends State<MyHomePage> {
                       onPressed: seatfield.text.trim().isEmpty
                           ? null
                           : () {
-                              scrollController.animateTo(45 / 4 * 80,
+                              scrollController.animateTo(
+                                  int.parse(seatfield.text.trim()) / 4 * 70,
                                   duration: Duration(milliseconds: 300),
                                   curve: Curves.easeIn);
                               currentSeat.value =
